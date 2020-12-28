@@ -9,23 +9,21 @@
 Pod::Spec.new do |s|
   s.name             = 'FPTools'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FPTools.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'FPTools:a simple iOS development tools'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  a simple iOS development tools
+  HAVE:
+      获得方法的执行时间
+  TODO:
+      其他的都没有
                        DESC
 
-  s.homepage         = 'https://github.com/aiyanbo/FPTools'
+  s.homepage         = 'https://github.com/forping/FPTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'aiyanbo' => '809060809@qq.com' }
-  s.source           = { :git => 'https://github.com/aiyanbo/FPTools.git', :tag => s.version.to_s }
+  s.author           = { 'aiyanbo' => 'ai_forping@163.com' }
+  s.source           = { :git => 'https://github.com/forping/FPTools.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

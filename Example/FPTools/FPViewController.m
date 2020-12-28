@@ -7,6 +7,7 @@
 //
 
 #import "FPViewController.h"
+#import <FPTools/FPTools.h>
 
 @interface FPViewController ()
 
@@ -17,7 +18,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    
+   double timer = fp_performAndTrackTime(^{
+       
+        for (NSInteger i = 0; i<10000; i++) {
+            NSLog(@"%ld",i);
+        }
+        
+    });
+    NSLog(@"运行时间 %f 秒",timer/NSEC_PER_SEC);
+    NSLog(@"运行时间 %f 豪秒",timer/NSEC_PER_MSEC);
+    NSLog(@"运行时间  %f  豪秒", timer/1E6);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
